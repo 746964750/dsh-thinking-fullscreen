@@ -30,12 +30,14 @@ DSH 对话过程中，一键切换到全屏沉浸层，实时可视化 AI 的思
 
 ### 方式二：固化到 profile（真正持久化）
 
-本包已是正式 bundle（`lib/client.js` + `cordis.patch.yml` + `dsh.bundle`）。本地安装：
+本包已是正式 bundle（`lib/client.js` + `cordis.patch.yml` + `dsh.bundle`）。从 GitHub 在线安装：
 
 ```powershell
-dsh plugin --profile web add "D:\project\ai_workspace\dsh-workspace\dsh-thinking-fullscreen"
+dsh plugin --profile web add github:746964750/dsh-thinking-fullscreen
 dsh web
 ```
+
+等价写法：`dsh plugin --profile web add https://github.com/746964750/dsh-thinking-fullscreen.git`
 
 卸载：`dsh plugin --profile web remove @deepseek-ai/dsh-thinking-fullscreen`
 

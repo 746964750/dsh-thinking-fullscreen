@@ -1,0 +1,27 @@
+{
+  "name": "@deepseek-ai/dsh-thinking-fullscreen",
+  "version": "1.0.0",
+  "description": "DSH 思考全景（Thinking Fullscreen）：对话思考/工具调用过程的全屏科技感展示，类桌面歌词的沉浸式动效。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

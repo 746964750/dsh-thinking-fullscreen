@@ -1,0 +1,28 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+
+# ── dsh-mcp-bridge: 自定义 MCP server（dbx）────────────────────────────
+# 工具以 mcp__dbx__<toolName> 暴露；改完本文件 HMR 热替换，无需重启。
+- insert:
+    - id: mcp-myserver
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: dbx
+        transport: stdio
+        command: dbx-mcp-server
+        args: []
+
+# ── dsh-vision-toolkit: 视觉模型（智谱 GLM-4.6V Flash）────────────────
+- id: vision-toolkit
+  config:
+    provider:
+      baseUrl: https://open.bigmodel.cn/api/paas/v4
+      credential: DSH_VISION_ZHIPU_API_KEY
+      model: glm-4.6v-flash
+      protocol: openai
+
+- id: ui-bloub-mood
+  disabled: false
+- id: dream-skin
+  disabled: true

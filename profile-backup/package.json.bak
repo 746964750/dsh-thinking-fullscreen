@@ -1,0 +1,44 @@
+{
+  "name": "dsh-profile-web",
+  "private": true,
+  "dependencies": {
+    "@anionex/dsh-vision-toolkit": "^0.1.39",
+    "@changfenhuang/dsh-genui": "https://gh-proxy.com/https://codeload.github.com/omdsh-dev/dsh-genui/tar.gz/43b386221a332280dfe7104d225bb922e187d6ae",
+    "@kenz1117/dsh-ui-usage-billing": "^1.0.2",
+    "@linxin666/dsh-client-ui-task-board": "^0.3.4",
+    "@linxin666/dsh-pet": "^0.3.4",
+    "@nanmicoder/dsh-agent-teams": "^0.1.13",
+    "@tt-a1i/archify-dsh": "^0.1.0",
+    "@yejiming/dsh-data-agent": "https://gh-proxy.com/https://codeload.github.com/omdsh-dev/dsh-data-agent/tar.gz/1e7f3c7e48b137a8fb870e7db9c6d63d6c5969ce",
+    "dsh-better-sidebar": "^0.16.1",
+    "dsh-bloub-mood": "^2.4.4",
+    "dsh-mcp-bridge": "^0.1.3",
+    "dsh-memory-evolve": "github:csyangwen/dsh-memory-evolve",
+    "dsh-pilot": "https://gh-proxy.com/https://codeload.github.com/guo6x/dsh-pilot/tar.gz/dff236a30a36f3939dd8577023f8a3040448e0f4",
+    "dshmarket": "^1.26.0"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "@yejiming/dsh-data-agent",
+        "dsh-pilot",
+        "dsh-mcp-bridge",
+        "@linxin666/dsh-client-ui-task-board",
+        "@linxin666/dsh-pet",
+        "dsh-better-sidebar",
+        "dsh-memory-evolve",
+        "@anionex/dsh-vision-toolkit",
+        "@noob-stupid/dsh-plugin-console",
+        "dshmarket",
+        "dsh-bloub-mood",
+        "@changfenhuang/dsh-genui",
+        "@tt-a1i/archify-dsh",
+        "@kenz1117/dsh-ui-usage-billing",
+        "@nanmicoder/dsh-agent-teams"
+      ],
+      "disabledBundles": []
+    }
+  }
+}

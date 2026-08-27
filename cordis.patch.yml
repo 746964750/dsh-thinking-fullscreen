@@ -1,0 +1,6 @@
+# dsh-thinking-fullscreen bundle patch:
+# Host half (lib/index.js) is a noop; browser half (lib/client.js) registers
+# Slot UI (header toggle + shell.overlay + composer.dock bridge).
+- insert:
+    - id: dsh-thinking-fullscreen
+      name: '@deepseek-ai/dsh-thinking-fullscreen'

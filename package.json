@@ -1,6 +1,6 @@
 {
   "name": "@deepseek-ai/dsh-thinking-fullscreen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DSH 思考全景（Thinking Fullscreen）：对话思考/工具调用过程的全屏科技感展示，类桌面歌词的沉浸式动效。",
   "type": "module",
   "main": "lib/index.js",
@@ -10,6 +10,14 @@
     "./package.json": "./package.json"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/746964750/dsh-thinking-fullscreen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/746964750/dsh-thinking-fullscreen/issues"
+  },
+  "homepage": "https://github.com/746964750/dsh-thinking-fullscreen#readme",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

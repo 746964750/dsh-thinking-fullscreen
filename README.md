@@ -44,5 +44,6 @@ conversation.composer.dock（数据桥）
 
 ## 版本
 
-- v1.0（本包）：19 次迭代打磨后的稳定版（dtf-1/pkg-19）
+- 当前：`1.0.1`（见 `package.json`）
+- dshmarket 对 `github:` 安装按 **锁定 commit ≠ 仓库 HEAD** 提示更新；发版请 bump `package.json` 的 `version` 后推送 `main`
 - 设计文档见 DESIGN.md

@@ -9,7 +9,7 @@ DSH Web 纯客户端插件：会话顶栏一键打开全屏沉浸层，实时展
 | `lib/client.js` | **Source of truth** — 正式 bundle（`__ModuleLoader__` + `require('react')`） |
 | `client.dynamic.js` | 动态插件体（`cordis_define` 的 `code.client`）；进程重启丢失 |
 | `lib/index.js` | Host `apply()` noop |
-| `package.json` → `dsh.bundle` + `dsh.client` | profile 层声明 + client inject |
+| `package.json` → `version` / `repository` / `dsh.bundle` + `dsh.client` | semver 展示、GitHub 源、profile 层、client inject |
 | `cordis.patch.yml` | bundle patch：insert Host 插件行 |
 | `DESIGN.md` | 设计意图、红线、验证清单（与实现有偏差时以代码为准） |
 | `README.md` | 安装与双轨用法 |
@@ -53,4 +53,4 @@ shell.overlay  →  Overlay → <dialog showModal> Top Layer
 
 - 改动能在 `lib/client.js`（或约定的动态副本）里定位到具体组件/函数。
 - 未破坏叶子通路与 `.dtf-*` 隔离。
-- 若改了正式包行为，`package.json` exports / `dsh.bundle` / `dsh.client` 与 `cordis.patch.yml` 仍一致。
+- 若改了正式包行为，`package.json` exports / `version` / `repository` / `dsh.bundle` / `dsh.client` 与 `cordis.patch.yml` 仍一致；面向用户的发版须 bump `version` 再推送。

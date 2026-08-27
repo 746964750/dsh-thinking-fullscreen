@@ -15,22 +15,9 @@ DSH 对话过程中，一键切换到全屏沉浸层，实时可视化 AI 的思
 | 交互 | 自动滚底、隐藏滚动条、光标闪烁、markdown 清洗 |
 | 性能 | 动画全 CSS/GPU 合成，零 JS 逐帧；空闲波浪降速省资源 |
 
-## 两种使用方式
+## 安装
 
-### 方式一：动态插件（当前运行态）
-
-`client.dynamic.js` 是 `cordis_define` 的 `code.client` 函数体。在 DSH 会话中：
-
-```js
-// 通过 cordis_define 工具，code.client 传入 client.dynamic.js 的内容
-// 然后 cordis_run 激活
-```
-
-⚠️ 动态插件**进程重启后丢失**，需要重新 define + run。
-
-### 方式二：固化到 profile（真正持久化）
-
-本包已是正式 bundle（`lib/client.js` + `cordis.patch.yml` + `dsh.bundle`）。从 GitHub 在线安装：
+从 GitHub 在线安装到 web profile：
 
 ```powershell
 dsh plugin --profile web add github:746964750/dsh-thinking-fullscreen
